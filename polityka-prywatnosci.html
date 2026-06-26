@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="/images/favicon-32x32-Sxiyr5iD.png" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Coś na ząbek - Polityka Prywatności
+  </title>
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <!-- Konfiguracja Tailwind -->
+  <script>
+   tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: 'rgb(44, 85, 48)',
+                        cream: 'rgb(248, 247, 242)',
+                        sage: 'rgb(124, 144, 130)',
+                        lavender: 'rgb(155, 138, 160)'
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        opensans: ['"Open Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1048501431">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-1048501431');
+  </script>
+  <!-- Style Tailwind w HTML -->
+  <style type="text/tailwindcss">
+   @layer components {
+            .container-custom {
+                @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-[72rem];
+            }
+            .section {
+                @apply py-12 md:py-16;
+            }
+            .section-title {
+                @apply text-center text-3xl md:text-4xl font-bold mb-8 font-playfair text-forest opacity-0;
+                animation: fadeIn 0.5s ease-out forwards;
+            }
+            .section-subtitle {
+                @apply text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12 opacity-0;
+                animation: fadeIn 0.5s ease-out forwards;
+                animation-delay: 0.2s;
+            }
+            .btn {
+                @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 font-medium transition-all duration-300;
+            }
+            .btn:hover {
+                @apply scale-105;
+            }
+            .btn-primary {
+                @apply bg-forest text-white;
+            }
+            .btn-primary:hover {
+                @apply bg-opacity-90;
+            }
+            .btn-outline {
+                @apply border-2 border-sage text-sage;
+            }
+            .btn-outline:hover {
+                @apply bg-sage text-white;
+            }
+            .animate-on-scroll {
+                @apply opacity-0 translate-y-8 transition-all duration-700;
+            }
+            .animate-on-scroll.is-visible {
+                @apply opacity-100 translate-y-0;
+            }
+        }
+        main p {
+            @apply text-justify;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.5s ease-out forwards;
+            animation-delay: 0.4s;
+        }
+  </style>
+ </head>
+ <body class="bg-cream flex flex-col min-h-screen font-opensans text-gray-800">
+  <div class="flex flex-col flex-grow" id="root">
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <!-- NAWIGACJA -->
+   <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4" id="navbar">
+    <div class="container-custom flex justify-between items-center">
+     <a class="flex items-center" href="index.html">
+      <img alt="Coś na ząbek Logo" class="w-auto transition-opacity duration-300" id="nav-logo" src="/images/logoWhite-D8L3Tv4v.png"/>
+     </a>
+     <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html">
+       Strona główna
+      </a>
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html#wybierz-diete">
+       Plany
+      </a>
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html#dlaczego-my">
+       Dlaczego my?
+      </a>
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html#jak-dzialamy">
+       Jak działamy?
+      </a>
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="o-nas.html">
+       O nas
+      </a>
+      <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html#contact">
+       Kontakt
+      </a>
+      <a class="btn btn-primary flex items-center space-x-2" href="index.html#wybierz-diete">
+       <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+        <rect height="18" rx="2" width="18" x="3" y="3">
+        </rect>
+        <path d="M7 8h10">
+        </path>
+        <path d="M7 12h10">
+        </path>
+        <path d="M7 16h10">
+        </path>
+       </svg>
+       <span>
+        Nasze Plany
+       </span>
+      </a>
+     </div>
+     <button aria-label="Otwórz menu" class="md:hidden" id="mobile-menu-btn">
+      <svg class="lucide lucide-menu text-white" fill="none" height="24" id="mobile-menu-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <line x1="4" x2="20" y1="12" y2="12">
+       </line>
+       <line x1="4" x2="20" y1="6" y2="6">
+       </line>
+       <line x1="4" x2="20" y1="18" y2="18">
+       </line>
+      </svg>
+     </button>
+    </div>
+    <!-- Menu Mobilne -->
+    <div class="md:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden" id="mobile-menu">
+     <div class="container-custom py-4 space-y-3">
+      <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html">
+       Strona główna
+      </a>
+      <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#wybierz-diete">
+       Plany
+      </a>
+      <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#dlaczego-my">
+       Dlaczego my?
+      </a>
+      <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#jak-dzialamy">
+       Jak działamy?
+      </a>
+      <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#contact">
+       Kontakt
+      </a>
+      <a class="block btn btn-primary w-full mt-4 flex items-center justify-center space-x-2" href="index.html#wybierz-diete">
+       <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+        <rect height="18" rx="2" width="18" x="3" y="3">
+        </rect>
+        <path d="M7 8h10">
+        </path>
+        <path d="M7 12h10">
+        </path>
+        <path d="M7 16h10">
+        </path>
+       </svg>
+       <span>
+        Nasze Plany
+       </span>
+      </a>
+     </div>
+    </div>
+   </nav>
+   <main class="flex-grow">
+    <!-- SEKCJA HERO - POLITYKA PRYWATNOŚCI -->
+    <section class="min-h-[40vh] flex items-center justify-center bg-cover bg-center relative" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/pexels-photo-3184183-B8WdHAas.jpg');">
+     <div class="absolute inset-0 bg-gradient-to-b from-forest/30 to-forest/70">
+     </div>
+     <div class="container-custom relative z-10 text-center py-20 mt-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white animate-on-scroll">
+       Polityka Prywatności
+      </h1>
+      <p class="text-center text-lg md:text-xl max-w-2xl mx-auto text-white animate-on-scroll">
+       Dbamy o Twoje dane. Przeczytaj, jak je przetwarzamy.
+      </p>
+     </div>
+    </section>
+    <!-- SEKCJA TREŚCI POLITYKI PRYWATNOŚCI -->
+    <section class="section bg-white">
+     <div class="container-custom max-w-4xl mx-auto space-y-8 text-gray-700">
+      <div class="prose lg:prose-xl max-w-none">
+       <h2 class="text-2xl font-bold font-playfair text-forest">
+        1. Postanowienia ogólne
+       </h2>
+       <p>
+        Niniejsza polityka prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez Użytkowników w związku z korzystaniem przez nich z usług oferowanych przez serwis internetowy "Coś na ząbek" (dalej: Serwis).
+       </p>
+       <p>
+        Administratorem danych osobowych zawartych w serwisie jest [NAZWA FIRMY] z siedzibą w [ADRES], NIP: [NIP], REGON: [REGON] (dalej: Administrator).
+       </p>
+       <p>
+        Dbamy o bezpieczeństwo Twoich danych. W tym celu używany jest m.in. bezpieczny protokół szyfrowania komunikacji (SSL).
+       </p>
+       <h2 class="text-2xl font-bold font-playfair text-forest mt-8">
+        2. Jakie dane zbieramy i w jakim celu?
+       </h2>
+       <p>
+        Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
+       </p>
+       <ul>
+        <li>
+         Poprzez gromadzenie plików “cookies” [patrz pkt. 4].
+        </li>
+        <li>
+         Poprzez gromadzenie logów serwera przez operatora hostingowego.
+        </li>
+       </ul>
+       <p>
+        Dane osobowe (takie jak imię, nazwisko, adres e-mail, numer telefonu), które zdecydujesz się nam przekazać, kontaktując się z nami bezpośrednio poprzez e-mail lub telefon, są przetwarzane wyłącznie w celu odpowiedzi na Twoje zapytanie lub realizacji zamówienia.
+       </p>
+       <h2 class="text-2xl font-bold font-playfair text-forest mt-8">
+        3. Prawa użytkownika
+       </h2>
+       <p>
+        Zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO), przysługują Ci następujące prawa:
+       </p>
+       <ul>
+        <li>
+         Prawo do żądania dostępu do swoich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania.
+        </li>
+        <li>
+         Prawo do wniesienia sprzeciwu wobec przetwarzania.
+        </li>
+        <li>
+         Prawo do przenoszenia danych.
+        </li>
+        <li>
+         Prawo do cofnięcia zgody na przetwarzanie danych osobowych w dowolnym momencie.
+        </li>
+        <li>
+         Prawo do wniesienia skargi do organu nadzorczego (Prezesa Urzędu Ochrony Danych Osobowych).
+        </li>
+       </ul>
+       <p>
+        W celu realizacji swoich praw, prosimy o kontakt pod adresem e-mail:
+        <a class="text-forest hover:underline" href="mailto:kontakt@cosnazabek.pl">
+         kontakt@cosnazabek.pl
+        </a>
+        .
+       </p>
+       <h2 class="text-2xl font-bold font-playfair text-forest mt-8">
+        4. Informacja o plikach cookies
+       </h2>
+       <p>
+        Serwis korzysta z plików cookies. Są to niewielkie pliki tekstowe wysyłane przez serwer www i przechowywane przez oprogramowanie komputera przeglądarki. Kiedy przeglądarka ponownie połączy się ze stroną, witryna rozpoznaje rodzaj urządzenia, z którego łączy się użytkownik.
+       </p>
+       <p>
+        Pliki cookies wykorzystywane są w następujących celach:
+       </p>
+       <ul>
+        <li>
+         Tworzenia statystyk, które pomagają zrozumieć, w jaki sposób użytkownicy Serwisu korzystają ze stron internetowych, co umożliwia ulepszanie ich struktury i zawartości.
+        </li>
+        <li>
+         Utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła.
+        </li>
+        <li>
+         Określania profilu użytkownika w celu wyświetlania mu dopasowanych materiałów w sieciach reklamowych, w szczególności sieci Google.
+        </li>
+       </ul>
+       <p>
+        Użytkownik może w każdej chwili wyłączyć lub przywrócić opcję gromadzenia cookies poprzez zmianę ustawień w przeglądarce internetowej. Instrukcja zarządzania plikami cookies jest dostępna na stronie
+        <a class="text-forest hover:underline" href="http://www.allaboutcookies.org/manage-cookies" rel="noopener noreferrer" target="_blank">
+         http://www.allaboutcookies.org/manage-cookies
+        </a>
+        .
+       </p>
+       <h2 class="text-2xl font-bold font-playfair text-forest mt-8">
+        5. Google Analytics
+       </h2>
+       <p>
+        Serwis korzysta z Google Analytics, usługi analizy oglądalności stron internetowych udostępnianej przez Google, Inc. (“Google”). Google Analytics używa “cookies” w celu umożliwienia witrynie przeanalizowania sposobu, w jaki użytkownicy z niej korzystają.
+       </p>
+       <p>
+        Informacje generowane przez cookie na temat korzystania z witryny przez użytkownika (włącznie z jego adresem IP) będą przekazywane spółce Google i przechowywane przez nią na serwerach w Stanach Zjednoczonych. Google będzie korzystała z tych informacji w celu oceny korzystania z witryny przez użytkownika, tworzenia raportów dotyczących ruchu na stronach dla operatorów witryn oraz świadczenia innych usług związanych z ruchem na witrynach internetowych i korzystaniem z internetu.
+       </p>
+       <p>
+        Użytkownik może zrezygnować z cookies, wybierając odpowiednie ustawienia na przeglądarce. Jednakże należy pamiętać, że w takim przypadku korzystanie z wszystkich funkcji witryny może okazać się niemożliwe.
+       </p>
+       <h2 class="text-2xl font-bold font-playfair text-forest mt-8">
+        6. Postanowienia końcowe
+       </h2>
+       <p>
+        Administrator zastrzega sobie prawo do wprowadzania zmian w polityce prywatności serwisu, o których będzie informował Użytkowników na stronach Serwisu. Wszelkie zmiany wchodzą w życie w terminie 14 dni od ich opublikowania.
+       </p>
+       <p>
+        W sprawach nieuregulowanych niniejszą Polityką Prywatności mają zastosowanie przepisy RODO oraz inne właściwe przepisy prawa polskiego.
+       </p>
+      </div>
+     </div>
+    </section>
+   </main>
+   <!-- STOPKA -->
+   <footer class="bg-forest text-white pt-16 pb-8" id="contact">
+    <div class="container-custom">
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <div>
+       <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+        Coś na ząbek
+       </h3>
+       <p class="mb-4">
+        Premium catering dietetyczny ze składnikami prosto od rolnika dostarczany pod Twoje drzwi.
+       </p>
+      </div>
+      <div>
+       <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+        Kontakt
+       </h3>
+       <ul class="space-y-3">
+        <li class="flex items-start">
+         <svg class="lucide lucide-phone h-5 w-5 mr-3 mt-0.5" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+         </svg>
+         <a class="hover:text-lavender transition-colors" href="tel:+48789800525">
+          +48-789-800-525
+         </a>
+        </li>
+        <li class="flex items-start">
+         <svg class="lucide lucide-mail h-5 w-5 mr-3 mt-0.5" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+          <rect height="16" rx="2" width="20" x="2" y="4">
+          </rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+          </path>
+         </svg>
+         <a class="hover:text-lavender transition-colors" href="mailto:kontakt@cosnazabek.pl">
+          kontakt@cosnazabek.pl
+         </a>
+        </li>
+        <li class="flex items-start">
+         <svg class="lucide lucide-clock h-5 w-5 mr-3 mt-1.5" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10">
+          </circle>
+          <polyline points="12 6 12 12 16 14">
+          </polyline>
+         </svg>
+         <div>
+          <p>
+           Pon-Pt: 9:00 - 18:00
+          </p>
+          <p>
+           Sob: 10:00 - 14:00
+          </p>
+          <p>
+           Niedz: Zamknięte
+          </p>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+        Szybkie Linki
+       </h3>
+       <ul class="space-y-2">
+        <!-- FOOTER-LINKS-START -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="index.html">
+          Strona główna
+         </a>
+        </li>
+        <!-- DIET-LINK: klasyczna -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-klasyczna.html">
+          Dieta Klasyczna
+         </a>
+        </li>
+        <!-- DIET-LINK-END: klasyczna -->
+        <!-- DIET-LINK: sportowa -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-sportowa.html">
+          Dieta Sportowa
+         </a>
+        </li>
+        <!-- DIET-LINK-END: sportowa -->
+        <!-- DIET-LINK: ketogeniczna -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-ketogeniczna.html">
+          Dieta Ketogeniczna
+         </a>
+        </li>
+        <!-- DIET-LINK-END: ketogeniczna -->
+        <!-- DIET-LINK: niski-ig -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-niski-ig.html">
+          Dieta o Niskim IG
+         </a>
+        </li>
+        <!-- DIET-LINK-END: niski-ig -->
+        <!-- DIET-LINK: weganska -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-weganska.html">
+          Dieta Wegańska
+         </a>
+        </li>
+        <!-- DIET-LINK-END: weganska -->
+        <!-- DIET-LINK: wegetarianska -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="dieta-wegetarianska.html">
+          Dieta Wegetariańska
+         </a>
+        </li>
+        <!-- DIET-LINK-END: wegetarianska -->
+        <li>
+         <a class="hover:text-lavender transition-colors" href="o-nas.html">
+          O nas
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-lavender transition-colors" href="polityka-prywatnosci.html">
+          Polityka Prywatności
+         </a>
+        </li>
+        <!-- FOOTER-LINKS-END -->
+       </ul>
+      </div>
+     </div>
+     <div class="border-t border-white/20 pt-8 text-center text-sm">
+      <p>
+       ©
+       <span id="year">
+        2026
+       </span>
+       Coś na ząbek. Wszelkie prawa zastrzeżone.
+      </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
