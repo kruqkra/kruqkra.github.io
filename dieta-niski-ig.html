@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <!-- Lokalna ikonka -->
-    <link href="./images/favicon-32x32.png" rel="icon" type="image/svg+xml"/>
+    <link href="./images/favicon-32x32.png" rel="icon" type="image/png"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>
         Coś na ząbek - Dieta o Niskim IG
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;700&amp;display=swap"
           rel="stylesheet"/>
     <!-- Tailwind CSS -->
-    <link href="css/dist/output.css" rel="stylesheet">
+    <link href="./css/dist/output.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1048501431">
     </script>
@@ -34,24 +34,24 @@
     <!-- NAV-START -->
 <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4" id="navbar">
     <div class="container-custom flex justify-between items-center">
-        <a class="flex items-center" href="index.html">
+        <a class="flex items-center" href="/">
             <img alt="Coś na ząbek Logo" class="w-auto transition-opacity duration-300" id="nav-logo"
                  src="./images/logoWhite.png">
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="index.html">Strona
+            <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="/">Strona
                 główna</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="index.html#wybierz-diete">Plany</a>
+               href="#wybierz-diete">Plany</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="index.html#dlaczego-my">Dlaczego my?</a>
+               href="#dlaczego-my">Dlaczego my?</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="index.html#jak-dzialamy">Jak działamy?</a>
-            <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="o-nas.html">O
+               href="#jak-dzialamy">Jak działamy?</a>
+            <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="/o-nas">O
                 nas</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="index.html#contact">Kontakt</a>
-            <a class="btn btn-primary flex items-center space-x-2" href="index.html#wybierz-diete">
+               href="#contact">Kontakt</a>
+            <a class="btn btn-primary flex items-center space-x-2" href="#wybierz-diete">
                 <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round"
                      stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"
                      xmlns="http://www.w3.org/2000/svg">
@@ -78,17 +78,17 @@
     <div class="md:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden"
          id="mobile-menu">
         <div class="container-custom py-4 space-y-3">
-            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html">Strona
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="/">Strona
                 główna</a>
             <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
-               href="index.html#wybierz-diete">Plany</a>
-            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#dlaczego-my">Dlaczego
+               href="#wybierz-diete">Plany</a>
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="#dlaczego-my">Dlaczego
                 my?</a>
             <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
-               href="index.html#jak-dzialamy">Jak działamy?</a>
-            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#contact">Kontakt</a>
+               href="#jak-dzialamy">Jak działamy?</a>
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="#contact">Kontakt</a>
             <a class="block btn btn-primary w-full mt-4 flex items-center justify-center space-x-2"
-               href="index.html#wybierz-diete">
+               href="#wybierz-diete">
                 <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round"
                      stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"
                      xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +102,9 @@
         </div>
     </div>
 </nav>
+<!-- NAV-END -->
+<!-- NAV-END -->
+<!-- NAV-END -->
 <!-- NAV-END -->
 <!-- NAV-END -->
 <!-- NAV-END -->
@@ -539,31 +542,31 @@
                 <h3 class="text-xl font-playfair font-bold mb-4 text-cream">Szybkie Linki</h3>
                 <ul class="space-y-2">
                     <!-- FOOTER-LINKS-START -->
-                    <li><a class="hover:text-lavender transition-colors" href="index.html">Strona główna</a></li>
+                    <li><a class="hover:text-lavender transition-colors" href="/">Strona główna</a></li>
                     <!-- DIET-LINK: klasyczna -->
-                    <li><a class="hover:text-lavender transition-colors" href="dieta-klasyczna.html">Dieta Klasyczna</a>
+                    <li><a class="hover:text-lavender transition-colors" href="/dieta-klasyczna">Dieta Klasyczna</a>
                     </li>
                     <!-- DIET-LINK-END: klasyczna -->
                     <!-- DIET-LINK: sportowa -->
-                    <li><a class="hover:text-lavender transition-colors" href="dieta-sportowa.html">Dieta Sportowa</a>
+                    <li><a class="hover:text-lavender transition-colors" href="/dieta-sportowa">Dieta Sportowa</a>
                     </li>
                     <!-- DIET-LINK-END: sportowa -->
                     <!-- DIET-LINK: ketogeniczna -->
-                    <li><a class="hover:text-lavender transition-colors" href="dieta-ketogeniczna.html">Dieta
+                    <li><a class="hover:text-lavender transition-colors" href="/dieta-ketogeniczna">Dieta
                         Ketogeniczna</a></li>
                     <!-- DIET-LINK-END: ketogeniczna -->
                     <!-- DIET-LINK: niski-ig -->
-                    <li><a class="hover:text-lavender transition-colors" href="dieta-niski-ig.html">Dieta o Niskim
+                    <li><a class="hover:text-lavender transition-colors" href="/dieta-niski-ig">Dieta o Niskim
                         IG</a></li>
                     <!-- DIET-LINK-END: niski-ig -->
                     <!-- DIET-LINK: weganska -->
-                    <!--                    <li><a class="hover:text-lavender transition-colors" href="dieta-weganska.html">Dieta Wegańska</a></li>-->
+                    <!--                    <li><a class="hover:text-lavender transition-colors" href="/dieta-weganska">Dieta Wegańska</a></li>-->
                     <!-- DIET-LINK-END: weganska -->
                     <!-- DIET-LINK: wegetarianska -->
-                    <!--                    <li><a class="hover:text-lavender transition-colors" href="dieta-wegetarianska.html">Dieta Wegetariańska</a></li>-->
+                    <!--                    <li><a class="hover:text-lavender transition-colors" href="/dieta-wegetarianska">Dieta Wegetariańska</a></li>-->
                     <!-- DIET-LINK-END: wegetarianska -->
-                    <li><a class="hover:text-lavender transition-colors" href="o-nas.html">O nas</a></li>
-                    <li><a class="hover:text-lavender transition-colors" href="polityka-prywatnosci.html">Polityka
+                    <li><a class="hover:text-lavender transition-colors" href="/o-nas">O nas</a></li>
+                    <li><a class="hover:text-lavender transition-colors" href="/polityka-prywatnosci">Polityka
                         Prywatności</a></li>
                     <!-- FOOTER-LINKS-END -->
                 </ul>
