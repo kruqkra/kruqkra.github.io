@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <!-- Lokalna ikonka -->
+    <link href="images/favicon-32x32.png" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Coś na ząbek - Premium Catering Dietetyczny
+    </title>
+    <!-- Czcionki Google -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;700&amp;display=swap"
+          rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <link href="css/dist/output.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1048501431">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'AW-1048501431');
+    </script>
+</head>
+<body class="bg-cream flex flex-col min-h-screen font-opensans text-gray-800">
+<div class="flex flex-col flex-grow" id="root">
+    <!-- NAWIGACJA (Dostosowana dla podstron) -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4" id="navbar">
+        <div class="container-custom flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img alt="Coś na ząbek Logo" class="w-auto transition-opacity duration-300" id="nav-logo"
+                     src="./images/logoWhite.png"/>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html">
+                    Strona główna
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#wybierz-diete">
+                    Plany
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#dlaczego-my">
+                    Dlaczego my?
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#jak-dzialamy">
+                    Jak działamy?
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="o-nas.html">
+                    O nas
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#contact">
+                    Kontakt
+                </a>
+                <a class="btn btn-primary flex items-center space-x-2" href="index.html#wybierz-diete">
+                    <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect height="18" rx="2" width="18" x="3" y="3">
+                        </rect>
+                        <path d="M7 8h10">
+                        </path>
+                        <path d="M7 12h10">
+                        </path>
+                        <path d="M7 16h10">
+                        </path>
+                    </svg>
+                    <span>
+        Nasze Plany
+       </span>
+                </a>
+            </div>
+            <button aria-label="Otwórz menu" class="md:hidden" id="mobile-menu-btn">
+                <svg class="lucide lucide-menu text-white" fill="none" height="24" id="mobile-menu-icon"
+                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" x2="20" y1="12" y2="12">
+                    </line>
+                    <line x1="4" x2="20" y1="6" y2="6">
+                    </line>
+                    <line x1="4" x2="20" y1="18" y2="18">
+                    </line>
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Mobilne -->
+        <div class="md:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden"
+             id="mobile-menu">
+            <div class="container-custom py-4 space-y-3">
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html">
+                    Strona główna
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#wybierz-diete">
+                    Plany
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#dlaczego-my">
+                    Dlaczego my?
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#jak-dzialamy">
+                    Jak działamy?
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#contact">
+                    Kontakt
+                </a>
+                <a class="block btn btn-primary w-full mt-4 flex items-center justify-center space-x-2"
+                   href="index.html#wybierz-diete">
+                    <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect height="18" rx="2" width="18" x="3" y="3">
+                        </rect>
+                        <path d="M7 8h10">
+                        </path>
+                        <path d="M7 12h10">
+                        </path>
+                        <path d="M7 16h10">
+                        </path>
+                    </svg>
+                    <span>
+        Nasze Plany
+       </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow">
+        <!-- ============================================== -->
+        <!-- SEKCJA HERO                                    -->
+        <!-- ============================================== -->
+        <section class="min-h-[60vh] flex items-center justify-center bg-cover bg-center relative"
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/dieta-klasyczna/pexels-photo-5638527.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70">
+            </div>
+            <div class="container-custom relative z-10 text-center py-20">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white animate-on-scroll">
+                    Dieta Klasyczna
+                </h1>
+                <p class="text-center text-lg md:text-xl max-w-2xl mx-auto mb-8 text-white animate-on-scroll">
+                    Tradycyjne, zbilansowane posiłki inspirowane polską kuchnią domową. Poznaj smak zdrowia w klasycznym
+                    wydaniu.
+                </p>
+                <a class="btn btn-primary text-lg px-8 py-4 inline-flex items-center gap-2 animate-on-scroll"
+                   href="tel:+48789800525">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                         stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>
+        Zamów dietę – zadzwoń: +48-789-800-525
+       </span>
+                </a>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- CZYM JEST TA DIETA?                            -->
+        <!-- ============================================== -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Czym jest dieta pudełkowa klasyczna?
+                </h2>
+                <p class="text-lg leading-relaxed animate-on-scroll">
+                    Dieta klasyczna to uniwersalny i zbilansowany plan żywieniowy, który łączy tradycyjne składniki
+                    i smaki z zasadami zdrowego odżywiania. To idealne rozwiązanie dla osób, które cenią domowe smaki
+                    i chcą jeść zdrowo bez radykalnych zmian w swoim jadłospisie. Nasze menu opiera się na sprawdzonych
+                    recepturach i sezonowych produktach, zapewniając pełnowartościowe posiłki na każdy dzień.
+                </p>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- DLA KOGO ZALECANA?                             -->
+        <!-- ============================================== -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Dla kogo jest zalecana dieta klasyczna?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4 animate-on-scroll">
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby chcące jeść zdrowo i domowo
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby bez specjalnych ograniczeń dietetycznych
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby zabiegane, które chcą jeść regularnie
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby szukające klasycznych, zrównoważonych smaków
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <p class="text-lg leading-relaxed">
+                            Nasza dieta klasyczna jest idealna dla osób, które chcą jeść zdrowo i smacznie, bez
+                            konieczności stosowania specjalistycznych diet eliminacyjnych.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- KORZYŚCI                                       -->
+        <!-- ============================================== -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 animate-on-scroll">
+                    Jakie są korzyści z diety klasycznej?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-on-scroll">
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Pełnowartościowe posiłki
+                        </h3>
+                        <p class="text-left">
+                            Każdy posiłek zawiera wszystkie niezbędne składniki odżywcze
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Zbilansowane proporcje
+                        </h3>
+                        <p class="text-left">
+                            Idealne proporcje białek, węglowodanów i tłuszczów
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Znajome smaki
+                        </h3>
+                        <p class="text-left">
+                            Dania inspirowane tradycyjną kuchnią polską
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Różnorodność dań
+                        </h3>
+                        <p class="text-left">
+                            Sezonowe produkty i zróżnicowane menu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- Z CZEGO SKŁADAJĄ SIĘ POSIŁKI                   -->
+        <!-- ============================================== -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Z czego składają się posiłki w diecie klasycznej?
+                </h2>
+                <p class="text-lg leading-relaxed mb-6 animate-on-scroll">
+                    Nasze posiłki są komponowane z najwyższej jakości składników, z uwzględnieniem zasad zbilansowanej
+                    diety. W menu znajdziesz:
+                </p>
+                <ul class="grid md:grid-cols-2 gap-4 text-lg animate-on-scroll">
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Różne rodzaje mięs i ryb
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Świeże warzywa i owoce
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Różnorodne produkty zbożowe
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Nabiał i jaja
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Tradycyjne zupy
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Domowe dodatki
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- PRZYKŁADOWE MENU (POSIŁKI I ZDJĘCIA)           -->
+        <!-- ============================================== -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Jakie są przykładowe dania w cateringu dietetycznym w wersji klasycznej?
+                </h2>
+                <p class="text-lg mb-8 animate-on-scroll">
+                    Nasza dieta składa się z 4 zbilansowanych posiłków dziennie, dostarczanych w wygodnych opakowaniach.
+                    Oto przykładowe menu:
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 animate-on-scroll">
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Jajecznica z dwóch jajek z pieczywem razowym i pomidorem"
+                             class="w-full h-64 object-cover"
+                             src="./images/dieta-klasyczna/michalh_A_rustic_countryside_breakfast_scene_on_a_wooden_table._e5c68629-ffe5-4ec8-9b98-717f4d5f4672.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Śniadanie
+                            </h3>
+                            <p class="text-lg">
+                                Jajecznica z dwóch jajek z pieczywem razowym i pomidorem
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Twarożek ze szczypiorkiem i rzodkiewką + kromka chleba żytniego"
+                             class="w-full h-64 object-cover"
+                             src="./images/dieta-klasyczna/michalh_A_rustic_farmhouse_setting_with_a_small_wooden_plate_or_d8780b22-cf5a-4830-a5c1-31cfe4171e99.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                II śniadanie
+                            </h3>
+                            <p class="text-lg">
+                                Twarożek ze szczypiorkiem i rzodkiewką + kromka chleba żytniego
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Pierś z kurczaka z kaszą gryczaną i buraczkami" class="w-full h-64 object-cover"
+                             src="./images/dieta-klasyczna/michalh_A_hearty_rustic_lunch_served_on_a_wooden_plate_or_ceram_a90950eb-0db0-4380-b012-71cb2955db02.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Obiad
+                            </h3>
+                            <p class="text-lg">
+                                Pierś z kurczaka z kaszą gryczaną i buraczkami
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Zupa krem z dyni z pestkami słonecznika" class="w-full h-64 object-cover"
+                             src="./images/dieta-klasyczna/michalh_A_rustic_bowl_of_creamy_pumpkin_soup_garnished_with_sun_4a346d6c-a1e2-4087-8d1e-285a9d87271d.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Kolacja
+                            </h3>
+                            <p class="text-lg">
+                                Zupa krem z dyni z pestkami słonecznika
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- CENNIK                                         -->
+        <!-- ============================================== -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Ile kosztuje catering dietetyczny w wersji klasycznej?
+                </h2>
+                <p class="text-lg mb-8 animate-on-scroll">
+                    Oferujemy różne warianty kaloryczne w atrakcyjnych cenach:
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1200 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            44.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1500 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            46.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1800 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            49.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            2200 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            54.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            2600 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            57.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            3000 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            61.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-4 text-center animate-on-scroll">
+                    Do podanych cen należy doliczyć 6 zł za dostawę.
+                </p>
+            </div>
+        </section>
+        <!-- ============================================== -->
+        <!-- ZAKOŃCZENIE (CALL TO ACTION)                   -->
+        <!-- ============================================== -->
+        <section class="section bg-forest">
+            <div class="container-custom text-center animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                    Rozpocznij swoją przygodę ze zdrowym odżywianiem
+                </h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto text-white">
+                    Zamów dietę klasyczną i ciesz się smakiem domowych posiłków bez wysiłku gotowania.
+                </p>
+                <a class="btn btn-primary bg-white text-forest hover:bg-cream text-lg px-8 py-4 inline-flex items-center gap-2"
+                   href="tel:+48789800525">
+                    <svg class="lucide lucide-phone w-5 h-5" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>
+        Zamów dietę – zadzwoń: +48-789-800-525
+       </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA (Stała na całej stronie) -->
+    <footer class="bg-forest text-white pt-16 pb-8" id="contact">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Coś na ząbek
+                    </h3>
+                    <p class="mb-4">
+                        Premium catering dietetyczny ze składnikami prosto od rolnika dostarczany pod Twoje drzwi.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Kontakt
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-phone h-5 w-5 mr-3 mt-0.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <a class="hover:text-lavender transition-colors" href="tel:+48789800525">
+                                +48-789-800-525
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-mail h-5 w-5 mr-3 mt-0.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" width="20" x="2" y="4">
+                                </rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+                                </path>
+                            </svg>
+                            <a class="hover:text-lavender transition-colors" href="mailto:kontakt@cosnazabek.pl">
+                                kontakt@cosnazabek.pl
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-clock h-5 w-5 mr-3 mt-1.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10">
+                                </circle>
+                                <polyline points="12 6 12 12 16 14">
+                                </polyline>
+                            </svg>
+                            <div>
+                                <p>
+                                    Pon-Pt: 9:00 - 18:00
+                                </p>
+                                <p>
+                                    Sob: 10:00 - 14:00
+                                </p>
+                                <p>
+                                    Niedz: Zamknięte
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Szybkie Linki
+                    </h3>
+                    <ul class="space-y-2">
+                        <!-- FOOTER-LINKS-START -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="index.html">
+                                Strona główna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK: klasyczna -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-klasyczna.html">
+                                Dieta Klasyczna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: klasyczna -->
+                        <!-- DIET-LINK: sportowa -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-sportowa.html">
+                                Dieta Sportowa
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: sportowa -->
+                        <!-- DIET-LINK: ketogeniczna -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-ketogeniczna.html">
+                                Dieta Ketogeniczna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: ketogeniczna -->
+                        <!-- DIET-LINK: niski-ig -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-niski-ig.html">
+                                Dieta o Niskim IG
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: niski-ig -->
+                        <!-- DIET-LINK: weganska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-weganska.html">
+                                Dieta Wegańska
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: weganska -->
+                        <!-- DIET-LINK: wegetarianska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-wegetarianska.html">
+                                Dieta Wegetariańska
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: wegetarianska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="o-nas.html">
+                                O nas
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="polityka-prywatnosci.html">
+                                Polityka Prywatności
+                            </a>
+                        </li>
+                        <!-- FOOTER-LINKS-END -->
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center text-sm">
+                <p>
+                    ©
+                    <span id="year">
+        2026
+       </span>
+                    Coś na ząbek. Wszelkie prawa zastrzeżone.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/script.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <!-- Lokalna ikonka -->
+    <link href="images/favicon-32x32.png" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Coś na ząbek - Dieta Wegańska
+    </title>
+    <!-- Czcionki Google -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;700&amp;display=swap"
+          rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <link href="css/dist/output.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1048501431">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'AW-1048501431');
+    </script>
+</head>
+<body class="bg-cream flex flex-col min-h-screen font-opensans text-gray-800">
+<div class="flex flex-col flex-grow" id="root">
+    <!-- NAWIGACJA -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4" id="navbar">
+        <div class="container-custom flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img alt="Coś na ząbek Logo" class="w-auto transition-opacity duration-300" id="nav-logo"
+                     src="./images/logoWhite.png"/>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html">
+                    Strona główna
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#wybierz-diete">
+                    Plany
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#dlaczego-my">
+                    Dlaczego my?
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#jak-dzialamy">
+                    Jak działamy?
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="o-nas.html">
+                    O nas
+                </a>
+                <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
+                   href="index.html#contact">
+                    Kontakt
+                </a>
+                <a class="btn btn-primary flex items-center space-x-2" href="index.html#wybierz-diete">
+                    <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect height="18" rx="2" width="18" x="3" y="3">
+                        </rect>
+                        <path d="M7 8h10">
+                        </path>
+                        <path d="M7 12h10">
+                        </path>
+                        <path d="M7 16h10">
+                        </path>
+                    </svg>
+                    <span>
+        Nasze Plany
+       </span>
+                </a>
+            </div>
+            <button aria-label="Otwórz menu" class="md:hidden" id="mobile-menu-btn">
+                <svg class="lucide lucide-menu text-white" fill="none" height="24" id="mobile-menu-icon"
+                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" x2="20" y1="12" y2="12">
+                    </line>
+                    <line x1="4" x2="20" y1="6" y2="6">
+                    </line>
+                    <line x1="4" x2="20" y1="18" y2="18">
+                    </line>
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Mobilne -->
+        <div class="md:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden"
+             id="mobile-menu">
+            <div class="container-custom py-4 space-y-3">
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html">
+                    Strona główna
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#wybierz-diete">
+                    Plany
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#dlaczego-my">
+                    Dlaczego my?
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
+                   href="index.html#jak-dzialamy">
+                    Jak działamy?
+                </a>
+                <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="index.html#contact">
+                    Kontakt
+                </a>
+                <a class="block btn btn-primary w-full mt-4 flex items-center justify-center space-x-2"
+                   href="index.html#wybierz-diete">
+                    <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect height="18" rx="2" width="18" x="3" y="3">
+                        </rect>
+                        <path d="M7 8h10">
+                        </path>
+                        <path d="M7 12h10">
+                        </path>
+                        <path d="M7 16h10">
+                        </path>
+                    </svg>
+                    <span>
+        Nasze Plany
+       </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow">
+        <!-- SEKCJA HERO -->
+        <section class="min-h-[60vh] flex items-center justify-center bg-cover bg-center relative"
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/dieta-weganska/pexels-photo-1640773.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70">
+            </div>
+            <div class="container-custom relative z-10 text-center py-20">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white animate-on-scroll">
+                    Dieta Wegańska
+                </h1>
+                <p class="text-center text-lg md:text-xl max-w-2xl mx-auto mb-8 text-white animate-on-scroll">
+                    Dieta całkowicie roślinna, wykluczająca produkty pochodzenia zwierzęcego.
+                </p>
+                <a class="btn btn-primary text-lg px-8 py-4 inline-flex items-center gap-2 animate-on-scroll"
+                   href="tel:+48789800525">
+                    <svg class="lucide lucide-phone w-5 h-5" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>
+        Zamów dietę – zadzwoń: +48-789-800-525
+       </span>
+                </a>
+            </div>
+        </section>
+        <!-- CZYM JEST TA DIETA? -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Czym jest dieta pudełkowa wegańska?
+                </h2>
+                <p class="text-lg leading-relaxed animate-on-scroll">
+                    Dieta wegańska to plan żywieniowy wykluczający wszelkie produkty pochodzenia zwierzęcego, w tym
+                    mięso, ryby, nabiał, jajka i miód. Opiera się wyłącznie na składnikach roślinnych, dostarczając
+                    wszystkich niezbędnych składników odżywczych poprzez starannie skomponowane posiłki. Nasze menu
+                    zostało opracowane przez ekspertów, aby zapewnić pełnowartościowe i zbilansowane żywienie w zgodzie
+                    z zasadami diety wegańskiej.
+                </p>
+            </div>
+        </section>
+        <!-- DLA KOGO ZALECANA? -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Dla kogo jest zalecana dieta wegańska?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4 animate-on-scroll">
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby, które nie spożywają produktów odzwierzęcych
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby z nietolerancją laktozy
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby dbające o etyczny styl życia
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby chcące poprawić trawienie i ogólne samopoczucie
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="lucide lucide-check w-6 h-6 text-forest mr-3 flex-shrink-0 mt-1" fill="none"
+                                 height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6 9 17l-5-5">
+                                </path>
+                            </svg>
+                            <p class="text-lg">
+                                osoby szukające lekkiej i odżywczej diety
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <p class="text-lg leading-relaxed">
+                            Nasza dieta wegańska jest idealna dla osób, które chcą przejść na w pełni roślinny styl
+                            życia, dbając jednocześnie o zdrowie i środowisko naturalne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- KORZYŚCI -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 animate-on-scroll">
+                    Jakie są korzyści z diety wegańskiej?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 animate-on-scroll">
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Obniżenie cholesterolu
+                        </h3>
+                        <p class="text-left">
+                            Naturalna redukcja poziomu cholesterolu we krwi
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Lepsze trawienie
+                        </h3>
+                        <p class="text-left">
+                            Poprawa perystaltyki jelit i trawienia
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Więcej energii
+                        </h3>
+                        <p class="text-left">
+                            Zwiększona energia i lekkość organizmu
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Mniej chorób
+                        </h3>
+                        <p class="text-left">
+                            Zmniejszenie ryzyka chorób cywilizacyjnych
+                        </p>
+                    </div>
+                    <div class="bg-cream p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-forest">
+                            Ekologia
+                        </h3>
+                        <p class="text-left">
+                            Pozytywny wpływ na środowisko naturalne
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Z CZEGO SKŁADAJĄ SIĘ POSIŁKI -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Z czego składają się posiłki w diecie wegańskiej?
+                </h2>
+                <p class="text-lg leading-relaxed mb-6 animate-on-scroll">
+                    Nasze posiłki są komponowane z najwyższej jakości składników roślinnych:
+                </p>
+                <ul class="grid md:grid-cols-2 gap-4 text-lg animate-on-scroll">
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Warzywa i owoce sezonowe
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Rośliny strączkowe
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Tofu i tempeh
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Napoje roślinne
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Orzechy i pestki
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="lucide lucide-check w-6 h-6 text-forest mr-3" fill="none" height="24"
+                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                             viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6 9 17l-5-5">
+                            </path>
+                        </svg>
+                        Różnorodne produkty zbożowe
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- PRZYKŁADOWE MENU (POSIŁKI I ZDJĘCIA) -->
+        <section class="section bg-white border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Jakie są przykładowe dania w cateringu dietetycznym w wersji wegańskiej?
+                </h2>
+                <p class="text-lg mb-8 animate-on-scroll">
+                    Nasza dieta składa się z 4 zbilansowanych posiłków dziennie, dostarczanych w wygodnych opakowaniach.
+                    Oto przykładowe menu:
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 animate-on-scroll">
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Tofucznica z warzywami i pieczywem żytnim" class="w-full h-64 object-cover"
+                             src="./images/dieta-weganska/michalh_A_rustic_farmhouse_breakfast_plate_with_a_hearty_tofu_s_73f70b07-6f6f-462d-a824-d15dcbf32169.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Śniadanie
+                            </h3>
+                            <p class="text-lg">
+                                Tofucznica z warzywami i pieczywem żytnim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Pudding chia z mlekiem kokosowym i mango" class="w-full h-64 object-cover"
+                             src="./images/dieta-weganska/michalh_A_rustic_wooden_table_with_a_small_glass_jar_of_chia_pu_8894d1a2-2d4b-40f7-8bea-0c5de095a1f3.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                II śniadanie
+                            </h3>
+                            <p class="text-lg">
+                                Pudding chia z mlekiem kokosowym i mango
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Gulasz z soczewicy z warzywami i ryżem" class="w-full h-64 object-cover"
+                             src="./images/dieta-weganska/michalh_A_rustic_comforting_plate_of_lentil_stew_with_hearty_ve_a3a13f56-efbe-44d0-acbe-757f69c893de.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Obiad
+                            </h3>
+                            <p class="text-lg">
+                                Gulasz z soczewicy z warzywami i ryżem
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md">
+                        <img alt="Sałatka z ciecierzycą, papryką i pestkami dyni" class="w-full h-64 object-cover"
+                             src="./images/dieta-weganska/michalh_A_colorful_rustic_salad_in_a_wooden_bowl_featuring_chic_289a4852-c1bf-4338-a7b8-034aad884692.png"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-forest mb-2">
+                                Kolacja
+                            </h3>
+                            <p class="text-lg">
+                                Sałatka z ciecierzycą, papryką i pestkami dyni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CENNIK -->
+        <section class="section bg-cream border-b border-[#EEEEEE]">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-6 animate-on-scroll">
+                    Ile kosztuje catering dietetyczny w wersji wegańskiej?
+                </h2>
+                <p class="text-lg mb-8 animate-on-scroll">
+                    Oferujemy różne warianty kaloryczne w atrakcyjnych cenach:
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1200 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            52.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1500 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            54.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            1800 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            57.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            2200 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            62.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            2600 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            65.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            3000 kcal
+                        </h3>
+                        <p class="text-xl text-sage">
+                            69.90 zł
+                            <span class="text-gray-600 text-base">
+          / dzień
+         </span>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-4 text-center animate-on-scroll">
+                    Do podanych cen należy doliczyć 6 zł za dostawę.
+                </p>
+            </div>
+        </section>
+        <!-- ZAKOŃCZENIE (CALL TO ACTION) -->
+        <section class="section bg-forest">
+            <div class="container-custom text-center animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                    Rozpocznij swoją przygodę z dietą wegańską
+                </h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto text-white">
+                    Zamów dietę wegańską i odkryj smak zdrowego, roślinnego odżywiania w zgodzie z naturą.
+                </p>
+                <a class="btn btn-primary bg-white text-forest hover:bg-cream text-lg px-8 py-4 inline-flex items-center gap-2"
+                   href="tel:+48789800525">
+                    <svg class="lucide lucide-phone w-5 h-5" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>
+        Zamów dietę – zadzwoń: +48-789-800-525
+       </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA -->
+    <footer class="bg-forest text-white pt-16 pb-8" id="contact">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Coś na ząbek
+                    </h3>
+                    <p class="mb-4">
+                        Premium catering dietetyczny ze składnikami prosto od rolnika dostarczany pod Twoje drzwi.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Kontakt
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-phone h-5 w-5 mr-3 mt-0.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <a class="hover:text-lavender transition-colors" href="tel:+48789800525">
+                                +48-789-800-525
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-mail h-5 w-5 mr-3 mt-0.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" width="20" x="2" y="4">
+                                </rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+                                </path>
+                            </svg>
+                            <a class="hover:text-lavender transition-colors" href="mailto:kontakt@cosnazabek.pl">
+                                kontakt@cosnazabek.pl
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="lucide lucide-clock h-5 w-5 mr-3 mt-1.5" fill="none" height="20"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10">
+                                </circle>
+                                <polyline points="12 6 12 12 16 14">
+                                </polyline>
+                            </svg>
+                            <div>
+                                <p>
+                                    Pon-Pt: 9:00 - 18:00
+                                </p>
+                                <p>
+                                    Sob: 10:00 - 14:00
+                                </p>
+                                <p>
+                                    Niedz: Zamknięte
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4 text-cream">
+                        Szybkie Linki
+                    </h3>
+                    <ul class="space-y-2">
+                        <!-- FOOTER-LINKS-START -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="index.html">
+                                Strona główna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK: klasyczna -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-klasyczna.html">
+                                Dieta Klasyczna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: klasyczna -->
+                        <!-- DIET-LINK: sportowa -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-sportowa.html">
+                                Dieta Sportowa
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: sportowa -->
+                        <!-- DIET-LINK: ketogeniczna -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-ketogeniczna.html">
+                                Dieta Ketogeniczna
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: ketogeniczna -->
+                        <!-- DIET-LINK: niski-ig -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-niski-ig.html">
+                                Dieta o Niskim IG
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: niski-ig -->
+                        <!-- DIET-LINK: weganska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-weganska.html">
+                                Dieta Wegańska
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: weganska -->
+                        <!-- DIET-LINK: wegetarianska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="dieta-wegetarianska.html">
+                                Dieta Wegetariańska
+                            </a>
+                        </li>
+                        <!-- DIET-LINK-END: wegetarianska -->
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="o-nas.html">
+                                O nas
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-lavender transition-colors" href="polityka-prywatnosci.html">
+                                Polityka Prywatności
+                            </a>
+                        </li>
+                        <!-- FOOTER-LINKS-END -->
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center text-sm">
+                <p>
+                    ©
+                    <span id="year">
+        2026
+       </span>
+                    Coś na ząbek. Wszelkie prawa zastrzeżone.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
