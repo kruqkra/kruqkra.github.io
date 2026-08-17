@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- 6. BANER COOKIE --- */
     const cookieBannerHTML = `
-<div id="cookie-banner" class="cookie-banner"><div class="container-custom flex flex-col sm:flex-row items-center justify-between"><div class="mb-4 sm:mb-0 text-center sm:text-left"><p class="text-sm text-gray-700">Używamy plików cookie, aby poprawić jakość korzystania z naszej strony. Kontynuując przeglądanie, zgadzasz się na używanie plików cookie.<br><a href="polityka-prywatnosci.html" class="text-forest hover:underline ml-1">Polityka prywatności</a></p></div><div class="flex space-x-4"><button id="accept-cookie" class="btn btn-primary py-2 px-4" aria-label="Zaakceptuj pliki cookie">Akceptuję</button></div></div></div>
+<div id="cookie-banner" class="cookie-banner"><div class="container-custom flex flex-col sm:flex-row items-center justify-between"><div class="mb-4 sm:mb-0 text-center sm:text-left"><p class="text-sm text-gray-700">Używamy plików cookie, aby poprawić jakość korzystania z naszej strony. Kontynuując przeglądanie, zgadzasz się na używanie plików cookie.<br><a href="/polityka-prywatnosci" class="text-forest hover:underline ml-1">Polityka prywatności</a></p></div><div class="flex space-x-4"><button id="accept-cookie" class="btn btn-primary py-2 px-4" aria-label="Zaakceptuj pliki cookie">Akceptuję</button></div></div></div>
 `;
 
     // Funkcja do sprawdzania cookie
