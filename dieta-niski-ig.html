@@ -35,23 +35,23 @@
 <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4" id="navbar">
     <div class="container-custom flex justify-between items-center">
         <a class="flex items-center" href="/">
-            <img alt="Coś na ząbek Logo" class="w-auto transition-opacity duration-300" id="nav-logo"
+            <img alt="Coś na ząbek Logo" class="h-16 w-auto transition-opacity duration-300" id="nav-logo"
                  src="./images/logoWhite.png">
         </a>
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden lg2:flex items-center space-x-8">
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="/">Strona
                 główna</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="#wybierz-diete">Plany</a>
+               href="/#wybierz-diete">Plany</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="#dlaczego-my">Dlaczego my?</a>
+               href="/#dlaczego-my">Dlaczego my?</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="#jak-dzialamy">Jak działamy?</a>
+               href="/#jak-dzialamy">Jak działamy?</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors" href="/o-nas">O
                 nas</a>
             <a class="nav-link-desktop text-white hover:text-lavender font-medium transition-colors"
-               href="#contact">Kontakt</a>
-            <a class="btn btn-primary flex items-center space-x-2" href="#wybierz-diete">
+               href="/#contact">Kontakt</a>
+            <a class="btn btn-primary flex items-center space-x-2" href="/#wybierz-diete">
                 <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round"
                      stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"
                      xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@
                 <span>Nasze Plany</span>
             </a>
         </div>
-        <button aria-label="Otwórz menu" class="md:hidden" id="mobile-menu-btn">
+        <button aria-label="Otwórz menu" class="lg2:hidden" id="mobile-menu-btn">
             <svg class="lucide lucide-menu text-white" fill="none" height="24" id="mobile-menu-icon" stroke="currentColor"
                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
                  xmlns="http://www.w3.org/2000/svg">
@@ -75,20 +75,22 @@
     </div>
 
     <!-- Menu Mobilne -->
-    <div class="md:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden"
+    <div class="lg2:hidden bg-white absolute w-full left-0 shadow-md transition-all duration-300 max-h-0 opacity-0 invisible overflow-hidden"
          id="mobile-menu">
         <div class="container-custom py-4 space-y-3">
             <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="/">Strona
                 główna</a>
             <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
-               href="#wybierz-diete">Plany</a>
-            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="#dlaczego-my">Dlaczego
+               href="/#wybierz-diete">Plany</a>
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="/#dlaczego-my">Dlaczego
                 my?</a>
             <a class="block py-2 text-forest hover:text-lavender font-medium text-center"
-               href="#jak-dzialamy">Jak działamy?</a>
-            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="#contact">Kontakt</a>
+               href="/#jak-dzialamy">Jak działamy?</a>
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="/o-nas">O
+                nas</a>
+            <a class="block py-2 text-forest hover:text-lavender font-medium text-center" href="/#contact">Kontakt</a>
             <a class="block btn btn-primary w-full mt-4 flex items-center justify-center space-x-2"
-               href="#wybierz-diete">
+               href="/#wybierz-diete">
                 <svg class="lucide lucide-menu-square" fill="none" height="20" stroke="currentColor" stroke-linecap="round"
                      stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"
                      xmlns="http://www.w3.org/2000/svg">
@@ -102,13 +104,6 @@
         </div>
     </div>
 </nav>
-<!-- NAV-END -->
-<!-- NAV-END -->
-<!-- NAV-END -->
-<!-- NAV-END -->
-<!-- NAV-END -->
-<!-- NAV-END -->
-<!-- NAV-END -->
 <!-- NAV-END -->
     <main class="flex-grow">
         <!-- HERO -->

@@ -577,10 +577,6 @@ video {
   }
 }
 
-.container-custom {
-  /* Dokładne odwzorowanie 1152px na 1920x1080 */
-}
-
 .section {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1548,14 +1544,6 @@ main p {
     order: 2;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-\[500px\] {
     height: 500px;
   }
@@ -1608,5 +1596,15 @@ main p {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1145px) {
+  .lg2\:flex {
+    display: flex;
+  }
+
+  .lg2\:hidden {
+    display: none;
   }
 }

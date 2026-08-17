@@ -60,9 +60,33 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isClosed) {
                 mobileMenu.classList.remove('max-h-0', 'opacity-0', 'invisible');
                 mobileMenu.classList.add('max-h-96', 'opacity-100');
+                navbar.classList.remove('bg-transparent', 'py-4');
+                navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+                if (logoImg) logoImg.src = logoPath2;
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-forest');
+                });
+                if (menuIcon) {
+                    menuIcon.classList.remove('text-white');
+                    menuIcon.classList.add('text-forest');
+                }
             } else {
                 mobileMenu.classList.add('max-h-0', 'opacity-0', 'invisible');
                 mobileMenu.classList.remove('max-h-96', 'opacity-100');
+                if (window.scrollY <= 50) {
+                    if (logoImg) logoImg.src = logoPath1;
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-forest');
+                        link.classList.add('text-white');
+                    });
+                    navbar.classList.add('bg-transparent', 'py-4');
+                    navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+                    if (menuIcon) {
+                        menuIcon.classList.remove('text-forest');
+                        menuIcon.classList.add('text-white');
+                    }
+                }
             }
         });
 
