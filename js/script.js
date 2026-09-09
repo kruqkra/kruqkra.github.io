@@ -160,33 +160,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* --- 6. BANER COOKIE --- */
-    const cookieBannerHTML = `
-<div id="cookie-banner" class="cookie-banner"><div class="container-custom flex flex-col sm:flex-row items-center justify-between"><div class="mb-4 sm:mb-0 text-center sm:text-left"><p class="text-sm text-gray-700">Używamy plików cookie, aby poprawić jakość korzystania z naszej strony. Kontynuując przeglądanie, zgadzasz się na używanie plików cookie.<br><a href="/polityka-prywatnosci" class="text-forest hover:underline ml-1">Polityka prywatności</a></p></div><div class="flex space-x-4"><button id="accept-cookie" class="btn btn-primary py-2 px-4" aria-label="Zaakceptuj pliki cookie">Akceptuję</button></div></div></div>
-`;
-
-    // Funkcja do sprawdzania cookie
-    const getCookie = (name) => {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    };
-
-    // Sprawdzenie czy cookie istnieje
-    if (!getCookie('cookiesAccepted')) {
-        document.body.insertAdjacentHTML('beforeend', cookieBannerHTML);
-        const banner = document.getElementById('cookie-banner');
-        const acceptBtn = document.getElementById('accept-cookie');
-
-        if (banner && acceptBtn) {
-            setTimeout(() => {
-                banner.classList.add('is-visible');
-            }, 500);
-
-            acceptBtn.addEventListener('click', () => {
-                // Ustawienie cookie na 1 rok
-                document.cookie = "cookiesAccepted=true; path=/; max-age=" + 365 * 24 * 60 * 60;
-                banner.classList.remove('is-visible');
-            });
-        }
-    }
+//     const cookieBannerHTML = `
+// <div id="cookie-banner" class="cookie-banner"><div class="container-custom flex flex-col sm:flex-row items-center justify-between"><div class="mb-4 sm:mb-0 text-center sm:text-left"><p class="text-sm text-gray-700">Używamy plików cookie, aby poprawić jakość korzystania z naszej strony. Kontynuując przeglądanie, zgadzasz się na używanie plików cookie.<br><a href="/polityka-prywatnosci" class="text-forest hover:underline ml-1">Polityka prywatności</a></p></div><div class="flex space-x-4"><button id="accept-cookie" class="btn btn-primary py-2 px-4" aria-label="Zaakceptuj pliki cookie">Akceptuję</button></div></div></div>
+// `;
+//
+//     // Funkcja do sprawdzania cookie
+//     const getCookie = (name) => {
+//         const value = `; ${document.cookie}`;
+//         const parts = value.split(`; ${name}=`);
+//         if (parts.length === 2) return parts.pop().split(';').shift();
+//     };
+//
+//     // Sprawdzenie czy cookie istnieje
+//     if (!getCookie('cookiesAccepted')) {
+//         document.body.insertAdjacentHTML('beforeend', cookieBannerHTML);
+//         const banner = document.getElementById('cookie-banner');
+//         const acceptBtn = document.getElementById('accept-cookie');
+//
+//         if (banner && acceptBtn) {
+//             setTimeout(() => {
+//                 banner.classList.add('is-visible');
+//             }, 500);
+//
+//             acceptBtn.addEventListener('click', () => {
+//                 // Ustawienie cookie na 1 rok
+//                 document.cookie = "cookiesAccepted=true; path=/; max-age=" + 365 * 24 * 60 * 60;
+//                 banner.classList.remove('is-visible');
+//             });
+//         }
+//     }
 });
